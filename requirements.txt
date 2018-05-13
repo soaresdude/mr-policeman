@@ -1,0 +1,4 @@
+pymongo==3.6.1
+flask==1.0.2
+passlib==1.7.1
+networkx==2.1
