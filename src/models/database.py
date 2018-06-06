@@ -1,8 +1,9 @@
+from dynaconf import settings
 import pymongo
 
 
 class Database(object):
-    URI = 'mongodb://127.0.0.1:27017'
+    URI = settings.URI
     DATABASE = None
 
     @staticmethod
@@ -30,6 +31,6 @@ class Database(object):
     def remove(collection, query):
         Database.DATABASE[collection].remove(query)
 
-    @classmethod
-    def save_to_mongo(cls, collection, data):
-        cls.update(collection, query={"_id": data['_id']}, data=data)
+    @staticmethod
+    def save_to_mongo(collection, data):
+        Database.DATABASE[collection].update({"_id": data['_id']}, data, upsert=True)
