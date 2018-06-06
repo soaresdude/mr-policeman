@@ -1,7 +1,7 @@
 # Mr Policeman
 
 ### Description
-This is a simple game of route prediction made for the Graph's Theory class.</br>
+This is a simple game of route prediction made for the Graph's Theory class.
 The objective of this application is to teach the basic concept of the Centrality algorithm in a Graph.
 
 ### Installation
