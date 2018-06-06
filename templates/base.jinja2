@@ -11,42 +11,39 @@
 </head>
 <body>
 
-<nav class="navbar navbar-fixed-top navbar-default custom-navbar-background">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed"
-                    data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand active" href="/" title="Home">Seu Puliça</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="#game" title="Busca">Game</a></li>
-            </ul>
-            <ul class="nav navbar-nav">
-                <li><a href="#busca" title="Busca">Busca</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                {% if session['email'] %}
-                    <li><a href="#registered" title="Registrados"><span
-                            class="glyphicon glyphicon-user"></span>
-                        Registrados</a></li>
-                    <li><a href="#logout" title="Log Out"><span class="glyphicon
-                    glyphicon-log-out"></span> Log out</a></li>
-                {% else %}
-                    <li><a href="#signup" title="Sign up"><span class="glyphicon
-                    glyphicon-user"></span> Sign up</a></li>
-                    <li><a href="#login" title="Log in"><span class="glyphicon
-                    glyphicon-log-in"></span> Log in</a></li>
-                {% endif %}
-            </ul>
-            ​
-        </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="/">Seu Puliça</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#game">Game <span class="sr-only">(current)
+        </span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#busca">Busca</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav active">
+            <li class="nav-item active">
+                <a href="#signup" class="nav-link">
+                    <img src="static/person.svg" width="30" height="30"
+                         class="d-inline-block align-content-center" alt="signup">
+                    Sign up  </a>
+            </li>
+            <li class="nav-item active">
+                <a href="#login" class="nav-link">
+                    <img src="static/sign-in.svg" width="30" height="30"
+                         class="d-inline-block align-content-center" alt="login">  Log in
+                </a>
+            </li>
+        </ul>
     </div>
 </nav>
 
