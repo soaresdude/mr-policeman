@@ -16,3 +16,7 @@ def init_database():
 @app.route('/')
 def home():
     return render_template('home.jinja2')
+
+
+from src.views.game import game_blueprint
+app.register_blueprint(game_blueprint, url_prefix="/game")

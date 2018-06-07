@@ -1,7 +1,12 @@
 from src.models.database import Database
+from tkinter import *
 
 
-class Game(object):
-    def __init__(self):
+class Game:
+    def __init__(self, master=None):
         Database.initialize()
-        pass
+
+
+root = Tk()
+Game(root)
+root.mainloop()
