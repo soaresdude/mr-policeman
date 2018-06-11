@@ -20,3 +20,7 @@ class Node(object):
         for c in ascii_lowercase[:-1]:
             node = Node(c)
             node.save()
+
+    @staticmethod
+    def fetch_nodes(query=None):
+        return Database.find(NODE_COLLECTION, query)

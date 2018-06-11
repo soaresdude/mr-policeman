@@ -25,12 +25,9 @@ class Edge(object):
     def fill_mongo():
         Edge.seed_mongo()
 
-    def measure_path(self):
-        pass
-
     @staticmethod
-    def fetch_nodes():
-        return Database.find(EDGE_COLLECTION)
+    def fetch_edges(query=None):
+        return Database.find(EDGE_COLLECTION, query)
 
     @classmethod
     def seed_mongo(cls):
