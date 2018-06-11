@@ -20,36 +20,6 @@
             aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-
-    <div class="collapse navbar-collapse" id="navbar">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="{{ url_for('game.index') }}">Game <span class="sr-only">(current)
-        </span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#busca">Busca</a>
-            </li>
-        </ul>
-        <ul class="collapse nav navbar-nav active">
-            <li class="nav-item active">
-                <a href="#signup" class="nav-link">
-                    <img src="static/person.svg" width="30" height="30"
-                         class="d-inline-block align-content-center" alt="signup">
-                    Sign up  </a>
-            </li>
-            <li class="nav-item active">
-                <a href="#login" class="nav-link">
-                    <img src="{{ url_for('static', filename='resources/sign-in
-                    .svg')
-                            }}"
-                         width="30"
-                         height="30"
-                         class="d-inline-block align-content-center" alt="login">  Log in
-                </a>
-            </li>
-        </ul>
-    </div>
 </nav>
 
 <div class="content container">
