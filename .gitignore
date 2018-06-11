@@ -1,3 +1,4 @@
 .idea/
 *__init__.py
-*__pycache__/
+*settings.py
+*__pycache__
