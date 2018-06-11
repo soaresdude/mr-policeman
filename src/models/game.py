@@ -1,12 +1,6 @@
-from src.models.database import Database
-from tkinter import *
+from src.models.edge import *
+from src.models.node import *
 
 
-class Game:
-    def __init__(self, master=None):
-        Database.initialize()
-
-
-root = Tk()
-Game(root)
-root.mainloop()
+def game():
+    pass

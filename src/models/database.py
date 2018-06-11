@@ -12,8 +12,12 @@ class Database(object):
         Database.DATABASE = client['mr_policeman-development']
 
     @staticmethod
-    def find(collection, query):
+    def find(collection, query=None):
         return Database.DATABASE[collection].find(query)
+
+    @staticmethod
+    def find_one(collection, query=None):
+        return Database.DATABASE[collection].find_one(query)
 
     @staticmethod
     def update(collection, query, data):
